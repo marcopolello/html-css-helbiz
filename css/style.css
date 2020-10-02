@@ -197,8 +197,6 @@ li > a{
 }
 #beta{
   background-image: url(../img/app.jpg);
-  background-position:bottom;
-  background-size: contain;
 }
 #gamma{
     background-image: url(../img/sfondo_info3.jpg);
@@ -239,8 +237,16 @@ li > a{
 }
 
 /* sezione social */
-
-
+#social{
+  background-image: url(../img/pachwork.jpg);
+  min-height: 404px;
+}
+.social-media{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
 
 
 
