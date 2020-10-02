@@ -14,9 +14,9 @@ img {
 
 /* regole di debug */
 [class*="col-"] {
-  min-height: 100px;
+  /* min-height: 100px;
   background-color: lightgreen;
-  border: solid 1px black;
+  border: solid 1px black; */
   padding: 2px;
   text-align: center;
 }
@@ -241,13 +241,20 @@ li > a{
   background-image: url(../img/pachwork.jpg);
   min-height: 404px;
 }
+
+#q{
+  min-height: 404px;
+  position: relative;
+}
 .social-media{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
 }
-
+.social-media > h1{
+  background-color: white;
+}
 
 
 
