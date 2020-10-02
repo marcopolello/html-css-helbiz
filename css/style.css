@@ -3,14 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
-
 
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 
 /* regole di debug */
@@ -19,6 +18,7 @@ img {
   background-color: lightgreen;
   border: solid 1px  #000;
   padding: 2px;
+  text-align: center;
 }
 
 /* .row .col-6 div  */
@@ -42,7 +42,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 900;
+  z-index: 100;
+  background-color: white;
 }
 
 #nav-mobile {
@@ -50,12 +51,114 @@ header {
 }
 
 #jumbo {
-  padding-top: 50px;
-  min-height: 300px;
+  background-image: url(../img/jumbotron.jpg);
+  min-height: 600px;
+  position: relative;
+}
+#jumbocolor{
+  background-color: rgba(187, 43, 43, 0.3);
+  min-height: 600px;
+}
+#homepage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+}
+#homepage p{
+  margin: 20px;
+  color: white;
+  font-size: 16px;
+}
+#homepage h1{
+  font-size: 40px;
+  color: white;
+}
+#homepage button{
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-width: 100px;
+  min-height: 35px;
+  max-height: 64px;
+  background-color: lightgrey;
+  position: relative;
+  cursor: pointer;
+}
+#hpbutton{
+  height: 100px;
+}
+#hpbutton > div{
+  margin: 20px;
+}
+#applebutton{
+  display: inline-block;
 }
 
+#applebutton img{
+  height: 20px;
+  max-width: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  margin: 10px;
+}
+
+#googlebutton{
+  display: inline-block;
+}
+#googlebutton img{
+  height: 20px;
+  max-width: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  margin: 10px;
+}
+
+#hpbutton span{
+  right: 0;
+}
 /* regole corpo pagina */
 
 .centra-sez1 {
   padding: 0 5%;
+}
+
+
+/* versione smartphone extrasmall device */
+@media all and (max-width: 768px){
+
+
+
+
+
+}
+
+
+/* versione tablet medium device */
+@media all and (min-width: 769px) and (max-width: 992px){
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* versione desktop large device */
+@media all and (min-width: 993px){
+
+
+
+
+
+
 }
