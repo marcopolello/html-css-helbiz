@@ -147,6 +147,15 @@ li > a{
   padding: 0 10%;
 }
 
+/* sezione prodotti */
+.Product{
+  padding: 30px;
+}
+
+
+
+
+/* sezione how do */
 #iphone{
   max-height: 300px;
   width: auto;
