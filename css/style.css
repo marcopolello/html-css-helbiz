@@ -14,9 +14,9 @@ img {
 
 /* regole di debug */
 [class*="col-"] {
-  min-height: 100px;
+  /* min-height: 100px;
   background-color: lightgreen;
-  border: solid 1px  #000;
+  border: solid 1px black; */
   padding: 2px;
   text-align: center;
 }
@@ -33,9 +33,9 @@ img {
 
 /* header */
 
-header {
+/* header {
   padding-top: 100px;
-}
+} */
 
 #nav-large {
   position: fixed;
@@ -45,13 +45,29 @@ header {
   z-index: 100;
   background-color: white;
 }
-
+.menu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+ul > li{
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+li > a{
+  text-decoration: none;
+  color: black;
+}
 #nav-mobile {
   display: none;
 }
 
 #jumbo {
   background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 600px;
   position: relative;
 }
@@ -74,6 +90,7 @@ header {
 #homepage h1{
   font-size: 40px;
   color: white;
+  font-weight: bold;
 }
 #homepage button{
   color: black;
@@ -130,11 +147,15 @@ header {
 
 /* versione smartphone extrasmall device */
 @media all and (max-width: 768px){
-
-
-
-
-
+ #nav-large{
+  display: none;
+ }
+ #nav-mobile{
+  display: block;
+ }
+ ul > li{
+  font-size: 12px;
+ }
 }
 
 
