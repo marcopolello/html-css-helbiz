@@ -176,6 +176,76 @@ li > a{
 }
 
 
+/* sezione smart mobility */
+.margin{
+  margin: 50px 0;
+}
+.sfondosmart{
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 550px;
+}
+.sfondosmart > #testosmart{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50% , -50%);
+}
+#alpha{
+  background-image: url(../img/scooter.jpg);
+}
+#beta{
+  background-image: url(../img/app.jpg);
+  background-position:bottom;
+  background-size: contain;
+}
+#gamma{
+    background-image: url(../img/sfondo_info3.jpg);
+}
+.get{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.get >h2{
+  font-size: 30px;
+  margin: 10px;
+}
+.get h4{
+  margin:10px;
+}
+.get > a{
+  text-decoration: none;
+  color: black;
+}
+.find{
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.find >h2{
+  font-size: 30px;
+  margin: 10px;
+}
+.find > a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* sezione social */
+
+
+
+
+
+
+
 /* versione smartphone extrasmall device */
 @media all and (max-width: 768px){
  #nav-large{
