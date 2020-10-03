@@ -14,10 +14,10 @@ img {
 
 /* regole di debug */
 [class*="col-"] {
-  min-height: 100px;
+  /* min-height: 100px;
   background-color: lightgreen;
   border: solid 1px black;
-  padding: 2px;
+  padding: 2px; */
   text-align: center;
 }
 
@@ -94,7 +94,7 @@ li > a{
   min-width: 100px;
   min-height: 35px;
   max-height: 64px;
-  background-color: lightgrey;
+  background-color: white;
   position: relative;
   cursor: pointer;
 }
@@ -142,14 +142,23 @@ li > a{
 }
 
 /* sezione prodotti */
-.Product{
+.product{
   padding: 30px;
 }
-
-
-
-
+.product > a{
+  text-decoration: none;
+  color: blue;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.product > h3{
+  color: black;
+}
 /* sezione how do */
+#howto{
+  margin: 20px 0 50px 0;
+}
+
 #iphone{
   max-height: 300px;
   width: auto;
@@ -160,6 +169,7 @@ li > a{
 }
 .subtitle-sez2 > h2{
   line-height: 300px;
+  font-size: 20px;
 }
 .steps{
   margin-top: 10px;
@@ -180,20 +190,39 @@ li > a{
   position: relative;
   min-height: 550px;
 }
-.sfondosmart > #testosmart{
+#testosmart{
   position: absolute;
   top: 50%;
   left: 80%;
   transform: translate(-50% , -50%);
 }
+#testosmart > a{
+  text-decoration: none;
+  color: white;
+}
+#testosmart > h1, h3{
+  color: white;
+}
+
+/* sfondi sezione smart mobility */
 #alpha{
   background-image: url(../img/scooter.jpg);
 }
 #beta{
   background-image: url(../img/app.jpg);
 }
+#beta1{
+  width: 100%;
+  min-height: 550px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 #gamma{
-    background-image: url(../img/sfondo_info3.jpg);
+  background-image: url(../img/sfondo_info3.jpg);
+}
+#gamma1{
+  width: 100%;
+  min-height: 550px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .get{
   width: 100%;
@@ -247,6 +276,9 @@ li > a{
   transform: translate(-50% , -50%);
 }
 .social-media > h3{
+  font-size: 30px;
+  padding: 40px;
+  color: black;
   background-color: white;
 }
 
@@ -318,20 +350,83 @@ background-color: rgb(0,0,0);
 
 /* versione smartphone extrasmall device */
 @media all and (max-width: 768px){
+  /* sezione header */
  #nav-large{
   display: none;
  }
  #nav-mobile{
   display: block;
  }
+
+ /* MAIN */
+
+ /* sottosezione how to */
  ul > li{
   font-size: 12px;
  }
+ img[alt="helbizimg"]{
+  display: none;
+ }
+ .subtitle-sez2 > h2{
+   font-size: 35px;
+ }
+ .subtitle-sez2{
+   background-color: black;
+   color: white;
+ }
+ .steps li{
+   margin: 5px 0;
+   font-size: 12px;
+ }
+
+ /* sottosezione smart */
+ #testosmart{
+    left: 40%;
+ }
+
+ /* footer */
+ #lists-foot > div {
+   margin: 20px 0;
+ }
+ #lists-foot h3{
+   font-size: 30px;
+   font-weight: bold;
+ }
+ #lists-foot h4{
+   font-size: 20px;
+ }
+
 }
 
 
 /* versione tablet medium device */
 @media all and (min-width: 769px) and (max-width: 992px){
+
+  /* sezione how to */
+  img[alt="helbizimg"]{
+   display: none;
+  }
+  .subtitle-sez2 > h2{
+    font-size: 35px;
+  }
+
+  /* SEZIONE SMART */
+  #testosmart{
+     left: 50%;
+  }
+
+
+  /* footer */
+  #lists-foot > div {
+    margin: 20px 0;
+  }
+  #lists-foot h3{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #lists-foot h4{
+    font-size: 20px;
+  }
 
 
 
